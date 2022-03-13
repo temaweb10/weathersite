@@ -14,17 +14,15 @@ if (localStorage.getItem('settingIp') == 'true') {
 if (localStorage.getItem('searchInput')) {
     searchInp.value = localStorage.getItem('searchInput')
     localStorage.removeItem('settingIp')
+    document.title = `Прогноз погоды на 14 дней по пункту ${localStorage.getItem('searchInput')}`
+    console.log(`Прогноз погоды на 14 дней по пункту ${localStorage.getItem('searchInput')} `)
     init()
 }
-
-
 
 function geopotision() {
     var script = document.createElement('script');
     script.src = "http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU";
     document.getElementsByTagName("head")[0].appendChild(script);
-    var title = document.createElement('title')
-    document.getElementsByTagName('header').appendChild(title)
     var map;
     var city, country;
 
@@ -40,22 +38,21 @@ function geopotision() {
         searchInp.value = city
         console.log(searchInp.value)
 
-        var title = document.createElement('title')
-        title.textContent = `Прогноз погоды на 14 дней по пункту ${city} (${country}),`
-        document.getElementsByTagName('header').appendChild(title)
+        document.title = `Прогноз погоды на 14 дней по пункту ${city} (${country})`
+        console.log(`Прогноз погоды на 14 дней по пункту ${city} (${country})`)
 
         if (typeof city === 'undefined') {
             searchInp.value = 'Moscow'
             init()
         }//доделать
         init()
+
         console.log(city);
         console.log(country);
     }
 
     initt();
 }
-
 
 //https://api.openweathermap.org/data/2.5/forecast?q=london&appid=d982b206b7125a363d94918d08ebf560  несколько дней
 let cityBlock = document.querySelector('#city')
