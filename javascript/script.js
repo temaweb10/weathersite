@@ -23,7 +23,8 @@ function geopotision() {
     var script = document.createElement('script');
     script.src = "http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU";
     document.getElementsByTagName("head")[0].appendChild(script);
-
+    var title = document.createElement('title')
+    document.getElementsByTagName('header').appendChild(title)
     var map;
     var city, country;
 
@@ -38,6 +39,10 @@ function geopotision() {
 
         searchInp.value = city
         console.log(searchInp.value)
+
+        var title = document.createElement('title')
+        title.textContent = `Прогноз погоды на 14 дней по пункту ${city} (${country}),`
+        document.getElementsByTagName('header').appendChild(title)
 
         if (typeof city === 'undefined') {
             searchInp.value = 'Moscow'
