@@ -10,7 +10,6 @@ if (localStorage.getItem('settingIp') == 'true') {
     localStorage.removeItem('searchInput')
     console.log()
 }
-
 if (localStorage.getItem('searchInput')) {
     searchInp.value = localStorage.getItem('searchInput')
     localStorage.removeItem('settingIp')
