@@ -4041,24 +4041,33 @@ function citySelected() {
 
             }
 
+            /* 
+            
+            */
+
             switch (Math.floor(Math.random() * 4)) {
                 case 0:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, 'ccab65b51ba24974b214e8c572e076b8')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '8244fdf56c544babbdf8df6eea1dcd2c')
                     break;
                 case 1:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '2ac9187454df459688bf8267872d076d')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '88bd8c92977a4d609f0a39a5b5f3e9d7')
                     break;
                 case 2:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '3341bc4ede1447cb98819a6ffdee6e41')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, 'c3efbba6fefa4da0b60e986045f1812b')
                     break;
 
 
                 case 3:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '11fd8e1bbfe54201a9cda18bf8ec8ba4')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '948bdef14bd947efa5e7a0165f9112c5')
                     break;
             }
 
-
+            /* 
+            8244fdf56c544babbdf8df6eea1dcd2c
+            88bd8c92977a4d609f0a39a5b5f3e9d7
+            c3efbba6fefa4da0b60e986045f1812b
+            948bdef14bd947efa5e7a0165f9112c5
+            */
 
 
 
@@ -4069,6 +4078,7 @@ function citySelected() {
             11fd8e1bbfe54201a9cda18bf8ec8ba4 NEW--
             505d72b181dd4ae39840f736aaad5b55
             */
+
 
             /* latCoord, lonCoord, start_year, start_day,end_day, start_year */
 
