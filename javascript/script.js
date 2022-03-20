@@ -4047,20 +4047,27 @@ function citySelected() {
 
             switch (Math.floor(Math.random() * 4)) {
                 case 0:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '8244fdf56c544babbdf8df6eea1dcd2c')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, 'a70704fb83194496aacde57349767a7f')
                     break;
                 case 1:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '88bd8c92977a4d609f0a39a5b5f3e9d7')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, 'b21c9eb2e3ef4edeac6f55390d7bdb5c')
                     break;
                 case 2:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, 'c3efbba6fefa4da0b60e986045f1812b')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '2115110df795410f89e66c2ff5a38b6f')
                     break;
 
 
                 case 3:
-                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '948bdef14bd947efa5e7a0165f9112c5')
+                    fetchReuest(document.getElementById('lon').getAttribute('data-hist-lat'), document.getElementById('lon').getAttribute('data-hist-lon'), valueYear, valueMonth, valueMonthEnd, '34c9134f6ecb451f993899a0c7793d21')
                     break;
             }
+
+            /* 
+            a70704fb83194496aacde57349767a7f
+            b21c9eb2e3ef4edeac6f55390d7bdb5c
+            2115110df795410f89e66c2ff5a38b6f
+            34c9134f6ecb451f993899a0c7793d21
+            */
 
             /* 
             8244fdf56c544babbdf8df6eea1dcd2c
